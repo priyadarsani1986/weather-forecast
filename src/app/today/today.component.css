@@ -1,0 +1,74 @@
+/* Date tabs - ul styles (inc Flex) */
+.date-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Date tabs - li styles */
+.date-list li {
+    width: 15%;
+    text-align: center;
+    padding:5px;
+    margin: 0;
+}
+
+/* Date tabs - date value style */
+.date-value  {
+    color: rgb(46, 114, 153);
+}
+
+/* Date tabs - Hover style */
+.date-list li :hover {
+    background-color: rgb(191, 211, 219);
+}
+
+/* Body - background styling */
+.body {
+    background-image: url('/assets/images/bck-image.jpeg');
+    position: absolute;
+    background-size: cover;
+    height: 950px;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+/* Forecast - ul styles (Inc Flex) */
+.forecast-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+/* Forecast - li styles */
+.forecast-item {
+    list-style: none;
+    width: 145px;
+    margin: 2px;
+    padding:25px;
+    border: 2px solid rgb(88, 192, 218);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(211, 224, 226);
+}
+
+/* Icons styling */
+img {
+    padding-bottom: 10px;
+}
+
+/* Forecast - data heading styling */
+.item-data {
+    font-size: 12px;
+}
+
+/* Media queries to adjust different browser sizes */
+@media (max-width:570px) {
+    .body {
+        height: 2200px;
+    }
+}

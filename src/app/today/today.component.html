@@ -1,0 +1,21 @@
+<!-- Date tabs -->
+<ul class="nav nav-tabs date-list">
+    <li class="nav-item" *ngFor="let data of forecastData;let index = index" (click)="selectDate(index)">
+        <a class="nav-link date-value" href="#">{{data[0] | date: 'mediumDate' }}</a>
+    </li>
+</ul>
+
+<!-- 3-Hour forecast for each date tab chosen -->
+<div class="body">
+<ul *ngIf="selectedDateObj" class="forecast-list">
+    <li class="forecast-item" *ngFor="let data of selectedDateObj[1]">
+        <h4 class="item-data"> {{(data.dt_txt) | date:'shortTime'}}</h4> 
+        <h4 class="item-data">{{temperatureConverter(data.main.temp) | number: '1.0-0'}} °C </h4> 
+        <h4 class="item-data">{{data.weather[0].main}}</h4> 
+        <img src="/assets/images/{{data.weather[0].main}}.png"/>
+        <h4 class="item-data">Min : {{temperatureConverter(data.main.temp_min) | number: '1.0-0'}} °C</h4> 
+        <h4 class="item-data">Max : {{temperatureConverter(data.main.temp_max) | number: '1.0-0'}} °C</h4> 
+        <h4 class="item-data">Humidity : {{data.main.humidity}}%</h4> 
+    </li>
+</ul>
+</div>
