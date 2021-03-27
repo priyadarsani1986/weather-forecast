@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Unzip the shared folder contents from git. Run `npm install` from the integrated terminal of VSC code editor which will install all the required dependencies to run this project. 
 
+## Framework/Packages used
+Bootstrap, Lodash 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
