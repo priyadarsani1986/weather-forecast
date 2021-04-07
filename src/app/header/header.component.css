@@ -1,6 +1,6 @@
 /* Nav element class */
 .navbar-content {
-    background-color: #218ee7;
+    background-color: #b2d0e9;
     display: block;
     width: 100%;
     position: relative;
@@ -9,31 +9,37 @@
 
 .navbar-brand {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     padding: 10px;
     padding-left: 0px;
 }
 
 .form-inline {
-    display: flex;
-    align-content: space-between;
-    width: 30%;
+    width: 100%;
     margin: auto;
-    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
+    justify-content:flex-end;
+    width: 100px;
 }
 
-.btn {
-    background-color:rgb(193, 221, 236);
+#input-text {
+    width: 200px;
+}
+
+#search-button {
+    background-color:rgb(62, 131, 168);
+    color: white;
 }
 /* Logo class */
 .logo {
-    padding:5px;
-    padding-right: 10px;
+    /* padding:15px; */
+    padding-right: 20px;
 }
 
 /* Anchor element */
@@ -50,17 +56,17 @@ label {
     color: rgb(59, 13, 224);
 }
 
-
 /* Media queries to adjust different browser sizes */
 
-@media (max-width:500px) {
-    .menulist li a {
-        font-size: 20px;
+@media (max-width: 400px) {
+    .navbar-content {
+        height: 160px;
     }
-}
-
-@media (max-width:410px) {
-    .menulist li a {
-        font-size: 16px;
+    #search-button {
+        width: 290px;
+        margin-left: 10px;
+    }
+    .form-inline {
+        margin-left: 20px;
     }
 }

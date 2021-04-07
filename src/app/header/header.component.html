@@ -2,15 +2,15 @@
 <div class="navbar-content">
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/assets/images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
             Weather Forecast
         </a>
     </nav>
-    <nav class="form-inline">
-        <label class="col-md-3 col-form-label">Enter City</label>
-        <input class="form-control col 2" type="text" [(ngModel)]="enterName"/>
-        <input class="btn col-md-3" type="button" value="Search" (click)="transferData()">
-    </nav>
+    <div class="form-inline">
+        <label class="col-md-3 col-form-label">Cityname</label>
+        <input class="form-control" id="input-text" type="text" [(ngModel)]="enterName"/>
+        <input class="btn" id="search-button" type="button" value="Search" (click)="transferData()">
+    </div>
     <app-weather *ngIf="parentData" [parentData]="parentData"></app-weather>
 </div>
 

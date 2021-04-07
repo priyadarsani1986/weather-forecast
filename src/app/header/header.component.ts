@@ -8,7 +8,7 @@ import { Form } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
 
-  enterName = "Southampton";
+  enterName = "";
   parentData = "";
 
   ngOnInit(): void {
