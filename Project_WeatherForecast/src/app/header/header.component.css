@@ -1,35 +1,18 @@
 /* Nav element class */
-.navbar-content {
-    background-color: #218ee7;
-    display: block;
-    width: 100%;
-    position: relative;
-    height: 140px;
+.menu {
+    background-color: #1998d3;
+    height: 80px;
 }
 
-.navbar-brand {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
-    padding: 10px;
-    padding-left: 0px;
-}
-
-.form-inline {
+/* List item */
+.menulist li {
     display: flex;
-    align-content: space-between;
-    width: 30%;
     margin: auto;
     margin-left: 0px;
+    padding-top: 10px;
+    list-style: none;
 }
 
-label {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
-}
-
-.btn {
-    background-color:rgb(193, 221, 236);
-}
 /* Logo class */
 .logo {
     padding:5px;

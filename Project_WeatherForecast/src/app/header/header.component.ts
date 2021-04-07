@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +7,9 @@ import { Form } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
 
-  enterName = "Southampton";
-  parentData = "";
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  transferData() {
-    this.parentData = this.enterName;
-  }
 }
